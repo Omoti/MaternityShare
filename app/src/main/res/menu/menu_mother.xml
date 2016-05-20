@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.FatherActivity">
+
+    <item android:id="@+id/action_bt_test_on" android:title="BTテスト : ON"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_bt_test_off" android:title="BTテスト : OFF"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_bt_on" android:title="BT接続"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_bt_off" android:title="BT切断"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_skyway_test" android:title="SkyWayテスト"
+        app:showAsAction="never"
+        />
+
+    <item android:id="@+id/action_skyway_off" android:title="SkyWay切断"
+        app:showAsAction="never"
+        />
+</menu>

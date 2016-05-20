@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="father_primary">#2196F3</color>
+    <color name="father_background">#E3F2FD</color>
+    <color name="mother_primary">#FF80AB</color>
+    <color name="mother_background">#F8BBD0</color>
+    <color name="sub_background">#70FFFFFF</color>
+</resources>

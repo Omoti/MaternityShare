@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ohmaker.maternityshare" >
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        android:icon="@drawable/ic_launcher"
+        >
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="@string/app_name"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.FatherActivity"
+            android:label="@string/title_activity_father"
+            android:screenOrientation="portrait"
+            android:theme="@style/FatherTheme"
+            >
+        </activity>
+        <activity
+            android:name=".activity.MotherActivity"
+            android:label="@string/title_activity_mother"
+            android:screenOrientation="portrait"
+            android:theme="@style/MotherTheme"
+            >
+        </activity>
+        <activity
+            android:name=".activity.BluetoothDeviceListActivity"
+            android:label="@string/title_activity_bluetooth_device_list"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <service
+            android:name=".bluesky.BlueSkyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+    </application>
+
+</manifest>

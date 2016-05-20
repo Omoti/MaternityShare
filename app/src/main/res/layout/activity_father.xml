@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/father_background"
+    tools:context=".activity.FatherActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <!-- Mother Button -->
+        <FrameLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_button_top"
+            android:layout_alignParentLeft="true"
+            android:elevation="16dp"
+            >
+
+            <Button android:id="@+id/bt_sky_connect"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="left"
+                android:background="@color/mother_primary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:elevation="32dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_bt_primary"
+                    android:text="Mam : WebRTC"
+                    />
+
+                <TextView android:id="@+id/text_skyway_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_bt_summary"
+                    android:text="Not connected"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="@dimen/button_width"
+            android:layout_height="@dimen/button_height"
+            android:layout_marginTop="@dimen/margin_button_top"
+            android:layout_alignParentRight="true"
+            android:elevation="16dp"
+            >
+
+            <Button android:id="@+id/bt_bluetooth_select"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/father_primary"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="8dp"
+                android:elevation="32dp"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_bt_primary"
+                    android:text="Dad : Bluetooth"
+                    />
+
+                <TextView android:id="@+id/text_device_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/font_bt_summary"
+                    android:text="Not connected"
+                    />
+            </LinearLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView android:id="@+id/img_papa"
+            android:layout_width="@dimen/image_parent_width"
+            android:layout_height="@dimen/image_parent_height"
+            android:src="@drawable/papadroid"
+            android:layout_gravity="center"
+            android:clickable="true"
+            />
+
+        <ImageView android:id="@+id/img_child"
+            android:layout_width="@dimen/image_child_width"
+            android:layout_height="@dimen/image_child_height"
+            android:src="@drawable/hart"
+            android:layout_gravity="center"
+            android:clickable="true"
+            android:layout_marginTop="@dimen/image_margin"
+            android:visibility="invisible"
+            />
+
+        <ScrollView android:id="@+id/scroll_log"
+            android:layout_width="@dimen/log_width"
+            android:layout_height="@dimen/log_height"
+            android:layout_gravity="bottom|left"
+            android:padding="@dimen/common_margin"
+            android:layout_margin="@dimen/common_margin"
+            android:background="@color/sub_background"
+            android:elevation="16dp"
+            >
+            <TextView android:id="@+id/text_log"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textSize="@dimen/font_log"
+                />
+        </ScrollView>
+
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    </style>
+
+    <style name="FatherTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/FatherActionBarStyle</item>
+    </style>
+
+    <style name="FatherActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/father_primary</item>
+    </style>
+
+    <style name="MotherTheme" parent="AppTheme">
+        <item name="actionBarStyle">@style/MotherActionBarStyle</item>
+    </style>
+
+    <style name="MotherActionBarStyle" parent="Widget.AppCompat.ActionBar">
+        <item name="background">@color/mother_primary</item>
+    </style>
+</resources>

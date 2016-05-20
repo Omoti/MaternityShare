@@ -1,0 +1,25 @@
+<resources>
+    <dimen name="activity_horizontal_margin">24dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+    <dimen name="common_margin">24dp</dimen>
+
+    <!-- Font -->
+    <dimen name="font_bt_primary">22sp</dimen>
+    <dimen name="font_bt_summary">14sp</dimen>
+    <dimen name="font_log">14sp</dimen>
+    <dimen name="font_top">48sp</dimen>
+
+    <!-- Layout -->
+    <dimen name="margin_button_top">72dp</dimen>
+    <dimen name="button_width">200dp</dimen>
+    <dimen name="button_height">72dp</dimen>
+    <dimen name="image_parent_width">480dp</dimen>
+    <dimen name="image_parent_height">480dp</dimen>
+    <dimen name="image_child_width">72dp</dimen>
+    <dimen name="image_child_height">72dp</dimen>
+    <dimen name="image_margin">48dp</dimen>
+    <dimen name="log_height">180dp</dimen>
+    <dimen name="log_width">240dp</dimen>
+    <dimen name="graph_height">80dp</dimen>
+    <dimen name="graph_width">192dp</dimen>
+</resources>
